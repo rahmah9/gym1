@@ -15,7 +15,14 @@ nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:cen
 .nav-links{display:flex;gap:22px;list-style:none;}.nav-links a{font-family:'League Spartan',sans-serif;font-size:.72rem;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;color:rgba(244,244,244,.5);text-decoration:none;transition:color .25s;}.nav-links a:hover{color:var(--gold);}
 .nav-cta{background:var(--gold);color:var(--black);border:none;cursor:pointer;font-family:'League Spartan',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:10px 22px;border-radius:4px;transition:all .2s;}.nav-cta:hover{box-shadow:var(--glow-gold);transform:translateY(-1px);}
 #hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;position:relative;overflow:hidden;padding:120px 20px 80px;}
-.hero-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=1600&q=80');background-size:cover;background-position:center;}
+.hero-img {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 15% 50%, rgba(123,63,168,0.1) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 40% at 85% 50%, rgba(230,210,143,0.08) 0%, transparent 70%),
+    linear-gradient(180deg, #0B0B0D 0%, #0e0c09 50%, #0B0B0D 100%);
+}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,13,.6) 0%,rgba(11,11,13,.5) 40%,rgba(11,11,13,.93) 100%);}
 .hero-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(230,210,143,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(230,210,143,.03) 1px,transparent 1px);background-size:60px 60px;animation:gp 8s ease-in-out infinite;}
 @keyframes gp{0%,100%{opacity:.4;}50%{opacity:.9;}}
@@ -53,11 +60,11 @@ section{padding:90px 40px;}.container{max-width:1200px;margin:0 auto;}
 .fexp-img{position:absolute;inset:0;background-size:cover;background-position:center;transition:transform .4s;}.fexp:hover .fexp-img{transform:scale(1.05);}
 .fexp-overlay{position:absolute;inset:0;}.f1 .fexp-overlay{background:linear-gradient(135deg,rgba(11,11,13,.88),rgba(19,15,4,.72));}.f2 .fexp-overlay{background:linear-gradient(135deg,rgba(11,11,13,.88),rgba(10,10,26,.72));}
 .fexp-content{position:relative;padding:48px 40px;}
-.fnum{font-family:'Bebas Neue',sans-serif;font-size:7rem;line-height:1;opacity:.07;position:absolute;top:20px;right:30px;letter-spacing:-4px;}.f1 .fnum{color:var(--gold);}.f2 .fnum{color:var(--purple);}
+.fnum{font-family:'Bebas Neue',sans-serif;font-size:7rem;line-height:1;opacity:.07;position:absolute;top:20px;right:30px;letter-spacing:-4px;}.f1 .fnum{color:var(--gold);}.f2 .fnum{color:var(--pink);}
 .ftag{font-family:'League Spartan',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;padding:5px 12px;border-radius:20px;display:inline-block;margin-bottom:16px;}
-.f1 .ftag{background:rgba(230,210,143,.1);color:var(--gold);border:1px solid rgba(230,210,143,.2);}.f2 .ftag{background:rgba(123,63,168,.1);color:var(--purple);border:1px solid rgba(123,63,168,.2);}
+.f1 .ftag{background:rgba(230,210,143,.1);color:var(--gold);border:1px solid rgba(230,210,143,.2);}.f2 .ftag{background:rgba(123,63,168,.1);color:var(--pink);border:1px solid rgba(123,63,168,.2);}
 .fexp-content h3{font-family:'Bebas Neue',sans-serif;font-size:2.2rem;letter-spacing:2px;margin-bottom:20px;}
-.flist{list-style:none;}.flist li{font-size:.88rem;color:rgba(244,244,244,.72);padding:8px 0;border-bottom:1px solid rgba(244,244,244,.05);display:flex;align-items:center;gap:10px;}.flist li::before{content:'';width:20px;height:1px;flex-shrink:0;}.f1 .flist li::before{background:var(--gold);}.f2 .flist li::before{background:var(--purple);}
+.flist{list-style:none;}.flist li{font-size:.88rem;color:rgba(244,244,244,.72);padding:8px 0;border-bottom:1px solid rgba(244,244,244,.05);display:flex;align-items:center;gap:10px;}.flist li::before{content:'';width:20px;height:1px;flex-shrink:0;}.f1 .flist li::before{background:var(--gold);}.f2 .flist li::before{background:var(--pink);}
 #pricing{background:var(--charcoal);}
 .pgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:50px;}
 .pcard{background:rgba(11,11,13,.85);border:1px solid rgba(230,210,143,.1);border-radius:14px;padding:30px 24px;position:relative;overflow:hidden;transition:all .3s;}.pcard:hover{border-color:var(--gold);box-shadow:var(--glow-gold);transform:translateY(-6px);}
